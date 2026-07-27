@@ -240,7 +240,7 @@ section.bordered { border-top: 2px solid var(--color-text); }
 .photo-frame { position: relative; }
 .photo-frame .dashed { position: absolute; inset: -14px; border: 1px dashed color-mix(in srgb, var(--color-text) 26%, transparent); }
 .photo-frame figure {
-  margin: 0; position: relative; filter: grayscale(1) contrast(1.08);
+  margin: 0; position: relative;
   aspect-ratio: 4/5; width: 100%; overflow: hidden;
   background: color-mix(in srgb, var(--color-text) 8%, transparent);
   display: flex; align-items: center; justify-content: center;
