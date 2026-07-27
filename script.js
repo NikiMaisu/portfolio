@@ -37,3 +37,11 @@ if (hero && cube) {
     cube.style.transform = `rotateX(${-20 - my * 14}deg) rotateY(${-34 + mx * 14}deg)`;
   });
 }
+
+const cubeWrap = document.querySelector('.cube-wrap');
+if (cubeWrap) {
+  window.addEventListener('mousemove', (ev) => {
+    const onRightSide = ev.clientX > window.innerWidth * 0.5;
+    cubeWrap.classList.toggle('cube-active', onRightSide);
+  }, { passive: true });
+}
