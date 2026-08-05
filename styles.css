@@ -82,6 +82,27 @@ a:hover { color: var(--color-accent); }
 }
 .navlink.active { color: var(--color-accent-700); }
 
+@media (max-width: 640px) {
+  .nav-inner {
+    position: relative;
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding-block: 12px;
+    padding-right: 96px;
+  }
+  .nav-brand .tag { display: none; }
+  .nav-links { gap: 14px; flex-wrap: wrap; row-gap: 8px; }
+  .navlink { font-size: 10px; letter-spacing: .06em; }
+  .nav-links .btn-primary {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+
 /* — buttons — */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
@@ -192,6 +213,19 @@ a:hover { color: var(--color-accent); }
 
 @media (max-width: 900px) {
   .cube-anno { display: none; }
+}
+
+@media (max-width: 700px) {
+  .cube-wrap {
+    position: static;
+    margin: 8px auto 40px;
+    transform: scale(0.72);
+    transform-origin: top center;
+  }
+  .cube-wrap .dim-label,
+  .cube-wrap .det-label {
+    display: none;
+  }
 }
 
 .hero-intro {
