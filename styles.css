@@ -333,6 +333,10 @@ section.bordered { border-top: 2px solid var(--color-text); }
 }
 .proj-links { display: flex; gap: 20px; }
 .proj-links a { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; }
+.proj-badges { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 12px; }
+.badge-group { display: flex; align-items: center; gap: 8px; }
+.badge-group img { display: block; height: 20px; }
+.badge-label { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: color-mix(in srgb, var(--color-text) 55%, transparent); }
 
 @media (max-width: 800px) {
   .proj-row { grid-template-columns: 1fr; gap: 10px; }
